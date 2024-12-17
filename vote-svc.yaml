@@ -1,0 +1,14 @@
+ind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: vote
+  name: vote
+spec:
+  ports:
+  - port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    role: vote
+  type: LoadBalancer
